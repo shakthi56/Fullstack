@@ -1,0 +1,12 @@
+body {
+
+    background-image: url('C:\Users\Naveen.V\AngularProject\FirstProject\src\assets\book2.jpg');
+    color: rgb(223, 27, 174);
+    
+    background-position: center center;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #121212;
+    }

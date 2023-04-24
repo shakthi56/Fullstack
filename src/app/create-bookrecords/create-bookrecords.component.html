@@ -1,0 +1,49 @@
+<!-- Here we are creating the createDetails-->
+<div class="col-md-6 offset-md-3">
+    <h3> Create Book </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Book Name</label>
+            <input type="text" class ="form-control" title="bookname" id = "bookName" placeholder="enter the bookname"
+                [(ngModel)] = "book.bookName" name = "bookName">
+        </div>
+    
+        <div class="form-group">
+            <label> Author Name </label>
+            <input type="text" class ="form-control" title="authorname" id = "authorName" placeholder="enter the authorname"
+                [(ngModel)] = "book.authorName" name = "authorName">
+        </div>
+    
+        <div class="form-group">
+            <label> Journal</label>
+            <input type="text" class ="form-control" title="journal" id = "journal" placeholder="enter the journal "
+                [(ngModel)] = "book.journal" name = "journal">
+        </div>
+
+        <div class="form-group">
+            <label> JournalId</label>
+            <input type="text" class ="form-control" title="journalId" id = "journalId" placeholder="enter the journalId "
+                [(ngModel)] = "book.journalId" name = "journalId">
+        </div>
+
+        <div class="form-group">
+            <label> Edition</label>
+            <input type="text" class ="form-control" title="edition" id = "edition" placeholder="enter the edition"
+                [(ngModel)] = "book.edition" name = "edition">
+        </div>
+
+        <div class="form-group">
+            <label> NoOfCopies</label>
+            <input type="text" class ="form-control" title="noofcopies" id = "noOfCopies" placeholder="enter the noofcopies"
+                [(ngModel)] = "book.noOfCopies" name = "noOfCopies" >
+        </div>
+        
+
+    
+        <button class = "btn btn-success" (click)= confirmSubmit() type ="submit" title="submit">Submit</button>
+        <button class = "btn btn-warning" type ="back" title="back">back</button>
+    
+    
+    </form>
+    </div> 

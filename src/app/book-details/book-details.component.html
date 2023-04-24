@@ -1,0 +1,52 @@
+<!-- here we take the attributes of a library Management System-->
+<div class="col-md-6 offset-md-3"><br>
+
+    <h3> View Book Details </h3>
+    <table class = "table table-stripped">
+    <thead>
+        <tr>
+            
+            <th> BookName </th>
+            <th >AuthorName </th>
+            <th> Journal </th>
+            <th> JournalId </th>
+            <th> Edition </th>
+            <th> NoOfCopies </th>
+            
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> {{ book.bookName }} </td>
+            <td> {{ book.authorName }} </td>
+            <td> {{ book.journal }} </td>
+            <td> {{ book.journalId }} </td>
+
+            <td> {{ book.edition }} </td>
+            <td> {{ book.noOfCopies }} </td>
+        </tr>
+    </tbody>
+    </table>
+    <button class = "btn btn-warning" type ="back" > <a href=" http://localhost:4200/books" title="back"> back </a> </button>
+    
+    <!--table>
+    <div>
+        <div>
+            <label> <b> Book Name: </b></label> {{book.bookName}}
+        </div>
+        <div>
+            <label> <b> Author Name: </b></label> {{book.authorName}}
+        </div>
+        <div>
+            <label> <b> Journal :</b></label> {{book.journal}}
+        </div>
+        <div>
+            <label> <b> Edition: </b></label> {{book.edition }}
+        </div>
+        <div>
+            <label> <b> NoOfCopies: </b></label> {{book.noOfCopies}}
+        </div>
+    </div>
+</div>
+</table-->

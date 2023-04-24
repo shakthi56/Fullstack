@@ -1,0 +1,46 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Update Book </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Book Name</label>
+            <input type="text" class ="form-control" id = "bookName"  title=" bookname"placeholder="update the bookname"
+                [(ngModel)] = "book.bookName" name = "bookName">
+        </div>
+    
+        <div class="form-group">
+            <label> Author Name</label>
+            <input type="text" class ="form-control" id = "authorName"  title="authorname"placeholder="update the authorname"
+                [(ngModel)] = "book.authorName" name = "authorName">
+        </div>
+    
+        <div class="form-group">
+            <label> Journal</label>
+            <input type="text" class ="form-control" id = "journal"  title=" journal"placeholder="update the journal"
+                [(ngModel)] = "book.journal" name = "journal">
+        </div>
+
+        <div class="form-group">
+            <label> JournalId</label>
+            <input type="text" class ="form-control" id = "journalId"  title=" journalId"placeholder="update the journal"
+                [(ngModel)] = "book.journalId" name = "journalId">
+        </div>
+
+
+        <div class="form-group">
+            <label>Edition </label>
+            <input type="text" class ="form-control" id = "edition" title="edition" placeholder="update the edition"
+                [(ngModel)] = "book.edition" name = "edition">
+        </div>
+
+        <div class="form-group">
+            <label>NoOfCopies </label>
+            <input type="text" class ="form-control" id = "noOfCopies" title="noofcopies" placeholder="update the noofcopies"
+                [(ngModel)] = "book.noOfCopies" name = "noOfCopies">
+        </div>
+    
+        <button class = "btn btn-success" (click)="confirmUpdated()" type ="submit" title="submit">Submit</button>
+        <button class = "btn btn-warning" type ="back" title="back">back</button>
+    
+    </form>
+    </div> 
